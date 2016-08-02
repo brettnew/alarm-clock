@@ -18,8 +18,9 @@
             <div class="set-alarm-time">
               <label for="alarm-time">What time would you like an alarm?</label>
               <input type="time" class="form-control" id="alarm-time" placeholder="Please enter a time">
-              <button type="submit" name="button" class="btn btn-primary">Set alarm for this time</button>
+              <button type="button" name="button" class="btn btn-primary" id="set-time">Set alarm for this time</button>
             </div>
+            <button type="button" name="button" id="snooze-five">Snooze for 5 minutes</button>
         </form>
         <h3>You have set your alarm time for: <span id="userAlarm"></span></h3>
         <audio src="audio/alarm.wav" id="alarm_sound"></audio>
