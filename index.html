@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+   <script src="bower_components/moment/min/moment.min.js"></script>
+   <link rel="stylesheet" href="build/css/vendor.css">
+   <script src="build/js/vendor.min.js"></script>
+   <script type="text/javascript" src="build/js/app.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Current time is <span id="time"></span></h3>
+      <div class="row">
+          <form id="set-alarm">
+            <div class="set-alarm-time">
+              <label for="alarm-time">What time would you like an alarm?</label>
+              <input type="time" class="form-control" id="alarm-time" placeholder="Please enter a time">
+              <button type="submit" name="button" class="btn btn-primary">Set alarm for this time</button>
+            </div>
+        </form>
+        <h3>You have set your alarm time for: <span id="userAlarm"></span></h3>
+        <audio src="audio/alarm.wav" id="alarm_sound"></audio>
+      </div>
+    </div>
+  </body>
+</html>
